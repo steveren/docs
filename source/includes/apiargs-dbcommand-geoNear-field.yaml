@@ -50,8 +50,8 @@ type: boolean
 ---
 arg_name: field
 description: |
-  The maximum number of documents to return. The default value is ``100``.
-  See also the ``num`` option.
+  The maximum number of documents to return. See also the ``num`` 
+  option.
 interface: command
 name: limit
 operation: geoNear
