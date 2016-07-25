@@ -57,8 +57,18 @@ patterns, including all possible network partitions. Always ensure
 that your main data center contains both a quorum of voting members
 and contains members that are eligible to be primary.
 
-Configuration
--------------
+.. note::
 
-To configure a *priority 0* member, see
-:doc:`/tutorial/configure-secondary-only-replica-set-member`.
+   MongoDB does not permit the current :term:`primary` to have a priority
+   of ``0``. To prevent the current primary from again becoming a primary,
+   you must first step down the current primary using
+   :method:`rs.stepDown()`.
+
+Procedure
+---------
+
+This tutorial uses a sample replica set with 5 members.
+
+.. include:: /includes/warning-rs-reconfig.rst
+
+.. include:: /includes/steps/configure-secondary-only-rs-member.rst

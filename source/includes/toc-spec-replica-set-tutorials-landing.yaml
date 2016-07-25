@@ -39,16 +39,6 @@ source:
   file: toc-replica-set-member-configuration.yaml
   ref: /tutorial/adjust-replica-set-member-priority
 ---
-level: 2
-source:
-  file: toc-replica-set-member-configuration.yaml
-  ref: /tutorial/configure-secondary-only-replica-set-member
----
-level: 2
-source:
-  file: toc-replica-set-member-configuration.yaml
-  ref: /tutorial/configure-a-hidden-replica-set-member
----
 description: Continue reading from :doc:`/administration/replica-set-member-configuration`
   for more tutorials that describe replica set configuration.
 level: 2
