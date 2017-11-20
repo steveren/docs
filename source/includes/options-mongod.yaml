@@ -643,7 +643,10 @@ description: |
 post: |
   .. include:: /includes/not-available-for-inmemory-storage-engine.rst
 
-  .. include:: /includes/wiredtiger-node-nojournal.rst
+  .. warning::
+
+     .. include:: /includes/wt-nojournal-warning.rst
+
 optional: true
 ---
 program: mongod
